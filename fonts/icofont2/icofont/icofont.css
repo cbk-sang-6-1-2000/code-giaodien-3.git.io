@@ -58,6 +58,16 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ec56";
 }
 
+.icofont-phone-circle:before
+{
+  content: "\efba";
+}
+
+.icofont-user-male:before
+{
+  content: "\ed03";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {

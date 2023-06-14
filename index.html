@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/icofont/icofont.min.css">
+    <link rel="stylesheet" href="fonts/icofont2/icofont/icofont.min.css">
     <link rel="stylesheet" href="libs/fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>Ngày 4</title>
@@ -28,7 +29,7 @@
                         <li><a href="">Hợp tác</a></li>
                         <li><a href=""><img src="images/assests/Ellipse 1.png" alt=""><p>Trọng Nông <i class="fa-solid fa-caret-down"></i></p></a>
                             <ul>
-                                <li><a id="login" class="login">Đăng ký/ Đăng nhập</a></li>
+                                <li><a href="" id="login" class="login">Đăng ký/ Đăng nhập</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -42,11 +43,13 @@
                     <div class="main-login">  
                         <form>
                             <P class="site-lg">ĐĂNG NHẬP <i class="fa-solid fa-xmark" id="close"></i></P><hr>
-                            <div class="form-outline mb-4">
-                                <input type="email" id="form2Example1" class="form-control" />
+                            <div class="form-max">
+                                <i class="icofont-ui-email"></i>
+                                <input type="text" id="input-3" class="form-input-max" placeholder="Địa chỉ Email">
                             </div>
-                            <div class="form-outline mb-4">
-                                <input type="password" id="form2Example2" class="form-control" />
+                             <div class="form-max">
+                                <i class="icofont-lock"></i>
+                                <input type="text" id="input-4" class="form-input-max" placeholder="Mật khẩu">
                             </div>
                             <div class="row mb-4">
                             <div class="col d-flex">
@@ -62,11 +65,50 @@
                             <button type="button" class="btn btn-login">Đăng nhập</button>
                             <button type="button" class="btn btn-primary">Đăng nhập với facebook</button>
                             <div class="text-center">
-                            <p class="no-accout"><a href="#!">Bạn chưa có tài khoản?Đăng ký ngay</a></p>
+                            <p class="no-accout"><a id="login-1" class="login-1" href="#!">Bạn chưa có tài khoản?Đăng ký ngay</a></p>
                             </div>
                         </form>
                     </div>
                 </div>
+
+                <div id="main-login-2">
+                    <div class="main-login-2">  
+                        <form>
+                            <P class="site-lg">ĐĂNG KÝ <i class="fa-solid fa-xmark" id="close-2"></i></P><hr>
+                            <div class="form-sum">
+                                <div class="form-sum-input">
+                                    <i class="icofont-user-male"></i>
+                                    <input type="text" id="input-1" class="form-input form-1" placeholder="Họ"> 
+                                </div>
+                                <div class="form-sum-input form-input-2">
+                                    <i class="icofont-user-male"></i>
+                                    <input type="text" id="input-2" class="form-input form-2" placeholder="Tên">
+                                </div>
+                            </div>
+                            <div class="form-max">
+                                <i class="icofont-ui-email"></i>
+                                <input type="text" id="input-3" class="form-input-max" placeholder="Địa chỉ Email">
+                            </div>
+                             <div class="form-max">
+                                <i class="icofont-phone-circle"></i>
+                                <input type="text" id="input-4" class="form-input-max" placeholder="Số điện thoại">
+                            </div>
+                            <div class="row mb-4">
+                            <div class="col d-flex">
+                                <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                                <label class="form-check-label" for="form2Example31"> Đồng ý với <span><a href="">Điều khoản dịch vụ</a></span> </label>
+                                </div>
+                            </div>
+                            </div>
+                            <button type="button" class="btn-login-2">Đăng ký</button>
+                            <div class="text-center">
+                            <p class="no-accout"><a id="login-2" class="login-2" href="#!">Bạn đã có tài khoản?Đăng nhập ngay?</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
                 <div class="container">
                     <div class="banner">
                         <h1>Hãy viết chữ gì lên đó</h1>
@@ -85,7 +127,7 @@
                                 </div>
                                 <div class="shape shape-1"><p>CỘNG ĐỒNG XANH</p></div>
                                 <div class="shape shape-2"><p>CÔNG NGHỆ XANH</p></div>
-                                <div class="shape shape-3"><p>HOẠT ĐỘNG XANH</p></div>
+                                <div class="shape shape-3"><p>HOẠT ĐỘNG MÔI TRƯỜNG</p></div>
                             </div>
                             <div class="col-md-6">
                                 <h2>Chào mừng bạn tham gia cộng đồng <span>Cứu Trái Đất</span></h2>
@@ -109,20 +151,28 @@
         
                             <div class="product-picture">
                                 <div class="box-picture">
-                                    <img src="images/assests/picture-4.jpg" alt="">
-                                    <p class="first">Ống hút gạo</p>
+                                    <a href="">
+                                        <img src="images/assests/picture-4.jpg" alt="">
+                                        <p class="first">Ống hút gạo</p>
+                                    </a>
                                 </div>
                                 <div class="box-picture">
-                                    <img src="images/assests/picture-1.jpg" alt="">
-                                    <p>Ống hút Cỏ bàng</p>
+                                    <a href="">
+                                        <img src="images/assests/picture-1.jpg" alt="">
+                                        <p>Ống hút Cỏ bàng</p>
+                                    </a>
                                 </div>
                                 <div class="box-picture">
-                                    <img src="images/assests/picture-2.jpg" alt="">
-                                    <p>Ống hút Tre</p>
+                                    <a href="">
+                                        <img src="images/assests/picture-2.jpg" alt="">
+                                        <p>Ống hút Tre</p>
+                                    </a>
                                 </div>
                                 <div class="box-picture">
-                                    <img src="images/assests/picture-3.jpg" alt="">
-                                    <p>Ống hút Sậy</p>
+                                    <a href="">
+                                        <img src="images/assests/picture-3.jpg" alt="">
+                                        <p>Ống hút Sậy</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -135,12 +185,12 @@
                <div class="lean-green">
                     <div class="container">
                         <ul>
-                            <li><img src="images/assests/lean-green.png" alt=""></li>
-                            <li><img src="images/assests/lean-green.png" alt=""></li>
-                            <li><img src="images/assests/lean-green.png" alt=""></li>
-                            <li><img src="images/assests/lean-green.png" alt=""></li>
-                            <li><img src="images/assests/lean-green.png" alt=""></li>
-                            <li><img src="images/assests/lean-green.png" alt=""></li>
+                            <li><a href=""><img src="images/assests/lean-green.png" alt=""></a></li>
+                            <li><a href=""><img src="images/assests/lean-green.png" alt=""></a></li>
+                            <li><a href=""><img src="images/assests/lean-green.png" alt=""></a></li>
+                            <li><a href=""><img src="images/assests/lean-green.png" alt=""></a></li>
+                            <li><a href=""><img src="images/assests/lean-green.png" alt=""></a></li>
+                            <li><a href=""><img src="images/assests/lean-green.png" alt=""></a></li>
                         </ul>
                     </div>
                </div>
@@ -154,11 +204,11 @@
                     <ul>
                         <li><a href=""><img src="images/assests/logo.png" alt=""></a></li>
                         <li><p>Tầng 1 – Tòa C1 – CC Dầu Khí Nghi Phú – Tp Vinh – Nghệ An <br>
-                            Hotline: 0918 673 440 <span>Email: <a href="">nguyentrongnong@gmail.com</a></span></p>
+                            Hotline: <a href=""> 0918 673 440</a> <span>Email: <a href=""> nguyentrongnong@gmail.com</a></span></p>
                         </li>
                         <li>
                             <p>Facebook: <a href="">https://www.facebook.com/cuutraidat</a> <br>
-                                Điều khoản sử dụng <span>Chính sách bảo mật</span></p>
+                                <a href="">Điều khoản sử dụng</a> <span><a href="">Chính sách bảo mật</a></span></p>
                         </li>
                     </ul>
                 </div>
