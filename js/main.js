@@ -1,54 +1,66 @@
-//form đăng nhập 
-document.querySelector("a.login").addEventListener("click", function(event) {
-  event.preventDefault();
-  var mainLogin = document.getElementById("main-login");
-  mainLogin.style.display = "block";
-  if (mainLogin.style.display === "block") {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.body.style.overflow = 'hidden';
-  }
+//đăng ký
+$(document).ready(function () {
+  $('#register').click(register)
 });
 
-document.querySelector("#close").addEventListener("click", function(event) {
-  event.preventDefault();
-  document.getElementById("main-login").style.display = "none";
-  document.body.style.overflow = 'auto';
+$(document).ready(function () {
+  $('#close-2').click(close_register)
 });
 
-//Đăng ký
-document.querySelector("a.login-1").addEventListener("click", function(event) {
-  event.preventDefault();
-  var mainLogin = document.getElementById("main-login");
-  mainLogin.style.display = "none";
-  var mainLogin = document.getElementById("main-login-2");
-  mainLogin.style.display = "block";
-  if (mainLogin.style.display === "block") {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.body.style.overflow = 'hidden';
-  }
+function register(a){
+  a.preventDefault();
+  $('#main-login-2').show();
+  $('html, body').scrollTop(0);
+  $('body').css('overflow', 'hidden');
+}
+
+function close_register() {
+  $('#main-login-2').hide();
+  $('body').css('overflow', 'auto');
+}
+
+$(document).ready(function () {
+  $('#login-2').click(back_register)
 });
 
-document.querySelector("#close-2").addEventListener("click", function(event) {
-  event.preventDefault();
-  document.getElementById("main-login-2").style.display = "none";
-  document.body.style.overflow = 'auto';
+function back_register(a) {
+  a.preventDefault();
+  $('#main-login').show();
+  $('#main-login-2').hide();
+  $('html, body').scrollTop(0);
+  $('body').css('overflow', 'hidden');
+}
+
+// đăng nhập
+$(document).ready(function () {
+  $('#log-in').click(login)
 });
 
-//trở lại đăng nhập
-document.querySelector("a.login-2").addEventListener("click", function(event) {
-  event.preventDefault();
-  var mainLogin = document.getElementById("main-login-2");
-  mainLogin.style.display = "none";
-  var mainLogin = document.getElementById("main-login");
-  mainLogin.style.display = "block";
-  if (mainLogin.style.display === "block") {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.body.style.overflow = 'hidden';
-  }
+$(document).ready(function () {
+  $('#close').click(close_login)
 });
 
-document.querySelector("#close").addEventListener("click", function(event) {
-  event.preventDefault();
-  document.getElementById("main-login").style.display = "none";
-  document.body.style.overflow = 'auto';
+function login(a){
+  a.preventDefault();
+  $('#main-login').show();
+  $('html, body').scrollTop(0);
+  $('body').css('overflow', 'hidden');
+}
+
+function close_login() {
+  $('#main-login').hide();
+  $('body').css('overflow', 'auto');
+}
+
+$(document).ready(function () {
+  $('#login-1').click(back_login)
 });
+
+function back_login(a) {
+  a.preventDefault();
+  $('#main-login-2').show();
+  $('#main-login').hide();
+  $('html, body').scrollTop(0);
+  $('body').css('overflow', 'hidden');
+}
+
